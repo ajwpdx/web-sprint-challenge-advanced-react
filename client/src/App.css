@@ -16,7 +16,6 @@ body {
 
 h1 {
   font-weight: 100;
-  color: white;
   text-align: center;
   font-size: 2rem;
 }
@@ -56,7 +55,7 @@ h1 {
 
 .plant-details {
   padding: 0 32px 0 16px;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 200;
   display: flex;
   flex-flow: column nowrap;
@@ -111,7 +110,7 @@ p {
 }
 
 .checkout-section {
-  color: #fff;
+  /* color: #fff; */
   padding: 32px 0;
   display: flex;
   flex-flow: column nowrap;
@@ -127,17 +126,17 @@ p {
 }
 
 form {
-  background: #0e101c;
   max-width: 400px;
   margin: 0 auto;
+  padding: 50px;
 }
 
 input {
   display: block;
   box-sizing: border-box;
+  border: 1px solid black;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid white;
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -149,7 +148,6 @@ label {
   display: block;
   margin-bottom: 13px;
   margin-top: 20px;
-  color: white;
   font-size: 14px;
   font-weight: 200;
 }
@@ -193,17 +191,12 @@ input {
   -webkit-appearance: none;
 }
 
-.App {
-  max-width: 600px;
-  margin: 0 auto;
-}
 
 hr {
   margin-top: 30px;
 }
 
 h2 {
-  color: white;
   font-weight: 200;
 }
 
@@ -217,12 +210,12 @@ button {
 }
 
 pre {
-  color: white;
+  /* color: white; */
   white-space: pre;
 }
 
 .steps {
-  color: white;
+  /* color: white; */
   display: flex;
   list-style: none;
   margin: 0;
@@ -250,4 +243,29 @@ pre {
 .active {
   color: #0e101c;
   border-bottom: 2px solid !important;
+}
+
+.dark-mode__toggle {
+  position: relative;
+}
+
+.toggle {
+  background: #cf0;
+  border-radius: 50px;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 70px;
+}
+
+.light-mode {
+  color: #0e101c;
+  background-color: #fff;
+
+}
+
+.dark-mode {
+  color:white;
+  background: #0e101c
 }
