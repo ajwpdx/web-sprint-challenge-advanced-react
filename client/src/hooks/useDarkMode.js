@@ -1,8 +1,14 @@
 import React, {useState} from 'react'
 
 
-export const useDarkMode = (key) => {
-    const[darkMode, setDarkMode] = useState('darkMode')
+export const useDarkMode = (initialValue) => {
+    const[darkMode, setDarkMode] = useState(initialValue)
 
-    return [darkMode, setDarkMode]
+    const toggleMode = e => {
+        e.preventDefault()
+        setDarkMode(!darkMode)
+    }
+
+    return [darkMode, toggleMode]
 }
+
