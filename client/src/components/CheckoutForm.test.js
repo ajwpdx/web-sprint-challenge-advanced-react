@@ -16,6 +16,8 @@ test("form header renders", () => {
 test("form shows success message on submit with form details", () => {
 
     render(<CheckoutForm/>)
+
+    //ARRANGE + ACT
     //first name
     const fName = screen.getByLabelText(/first name:/i)
     fireEvent.change(fName, {target: {value: 'Alex'}})
@@ -38,6 +40,7 @@ test("form shows success message on submit with form details", () => {
     const submit = screen.getByRole('button', {name: /checkout/i})
     fireEvent.click(submit)
 
+    //ASSERT
     expect(screen.getByText(/Your new green friends will be shipped to:/i)).toBeInTheDocument()
     expect(screen.getByText(/Alex Williams/i)).toBeInTheDocument()
 });

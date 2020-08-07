@@ -194,8 +194,7 @@ input {
 }
 
 .App {
-  max-width: 600px;
-  margin: 0 auto;
+  /* background-color: white; */
 }
 
 hr {
@@ -250,4 +249,24 @@ pre {
 .active {
   color: #0e101c;
   border-bottom: 2px solid !important;
+}
+
+.dark-mode__toggle {
+  position: relative;
+}
+
+.toggle {
+  background: #cf0;
+  border-radius: 50px;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 70px;
+}
+
+.light-mode {
+  color: #0e101c;
+  background-color: #fff;
+
 }

@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='App'>
       <Router>
         <nav className="container">
           <h1>
@@ -43,7 +43,14 @@ function App() {
               </NavLink>
             </li>
           </ul>
+          <div className='dark-mode__toggle'>
+        <button
+          className='toggle'
+          >☀️
+          </button>
+        </div>
         </nav>
+        
         <Route
           exact
           path="/"
