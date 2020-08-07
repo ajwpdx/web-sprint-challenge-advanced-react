@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className={darkMode ? 'light-mode' : 'dark-mode'} onClick={toggleMode}>
+    <div className={darkMode ? 'light-mode' : 'dark-mode'} >
       <Router>
         <nav className="container">
           <h1>
@@ -48,6 +48,7 @@ function App() {
           <div className='dark-mode__toggle'>
         <button
           className='toggle'
+          onClick={toggleMode}
           >{darkMode ? '☀️' : '🌙'}
           </button>
         </div>
